@@ -1,0 +1,7 @@
+#.env
+CLOUDINARY_URL=cloudinary://<798925262317684>:<va2C82G7gAwAUQ1ElGoO5fgxjb0>@dhn7dk33o
+REACT_APP_CLOUD_NAME=dhn7dk33o
+REACT_APP_CLOUD_UPLOAD_PRESET=ahihi
+
+REACT_APP_API_URL=http://localhost:8081/api/v1
+VITE_API_URL=http://localhost:8081/api/v1

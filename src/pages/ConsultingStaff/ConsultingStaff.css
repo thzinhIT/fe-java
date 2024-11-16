@@ -324,6 +324,7 @@
 .order-details button:hover {
   background-color: #0056b3;
 }
+
 /* Nền tối khi form chi tiết hiển thị */
 .overlay {
   position: fixed;
@@ -331,8 +332,29 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Màu nền mờ */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Màu nền mờ */
   z-index: 999;
 }
 
 /* Nền tối khi form chi tiết hiển thị */
+
+/* Nút Tạo mới hóa đơn sẽ được căn góc phải */
+.create-invoice-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Thêm hiệu ứng khi hover vào nút */
+.create-invoice-btn:hover {
+  background-color: #45a049;
+}

@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+
 import { useState } from "react";
 import "./App.css";
 import Dashboard from "./pages/admin/Dashboard.jsx";
@@ -28,7 +29,8 @@ import Profile from "./pages/User/profilePage.jsx";
 import MyOrders from "./pages/User/MyOrderPage.jsx";
 import OrderDetail from "./pages/User/projectDetail.jsx";
 import ConsultingStaff from "./pages/ConsultingStaff/ConsultingStaff.jsx";
-
+import LoginPage from "./pages/nhanvienthietke/LoginPage.jsx";
+import FeedbackPage from "./pages/nhanvienthietke/FeedbackPage.jsx";
 function App() {
   const navigate = useNavigate();
   // const [isFirstLoad, setIsFirstLoad] = useState(true);
@@ -75,9 +77,8 @@ function App() {
           path="/GioiThieu"
           element={<UserRoute element={<GioiThieu />} />}
         />
-        <Route path="/nhanvien" element={<DesignStaffPage />} />
-        <Route path="/csbm" element={<UserRoute element={<Csbm />} />} />
 
+        <Route path="/csbm" element={<UserRoute element={<Csbm />} />} />
         <Route path={"/VerifyOTP"} element={<VerifyOTP />} />
 
         <Route path="/Blog" element={<UserRoute element={<BlogPage />} />} />
@@ -131,6 +132,11 @@ function App() {
           path="/Admin/ProjectManage"
           element={<AdminRoute element={ProjectManage} />}
         />
+      </Routes>
+      <Routes>
+        <Route path="/dangnhap" element={<LoginPage />} />
+        <Route path="/nhanvien" element={<DesignStaffPage />} />
+        <Route path="/phan-anh" element={<FeedbackPage />} />
       </Routes>
     </div>
   );
